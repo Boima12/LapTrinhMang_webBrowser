@@ -1,0 +1,1183 @@
+@import './assets/fonts/fonts.css';
+
+
+body {
+    margin: 0;
+}
+
+div.main_navbar {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+div.main_navbar a {
+    text-decoration: none;
+    transition-duration: 0.4s;
+    transition-property: all;
+}
+
+div.main_navbar div.normal {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+div.main_navbar div.normal a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+}
+
+div.main_navbar div.normal a:hover {
+    color: black;
+    background-color: rgb(198, 198, 198);
+}
+
+div.main_navbar div.normal i {
+    transform: scale(0.9, 0.9);
+    flex-shrink: 0;
+    color: #FFF;
+    position: absolute;
+    right: 30px;
+}
+
+div.main_navbar div.normal div.dropdown_more {
+    width: 200px;
+    height: 180px;
+    flex-shrink: 0;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 358px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+div.main_navbar div.normal div.dropdown_more a {
+    width: 100%;
+    height: 60px;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.main_navbar div.normal div.dropdown_more a:hover {
+    color: white;
+    background-color: grey;
+}
+
+div.main_navbar div.collapse {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0 15px 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+div.main_navbar div.collapse i {
+    color: #FFF;
+}
+
+div.main_navbar div.collapse i:hover {
+    cursor: pointer;
+}
+
+div.main_navbar div.collapse a {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_navbar div.collapse a:hover {
+    color: black;
+    background-color: rgb(198, 198, 198);
+}
+
+div.main_navbar div.collapse div.menu_collapse {
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.main_navbar div.collapse div.menu_collapse i {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: scale(1.2, 1.2);
+}
+
+div.main_navbar div.collapse div.menu_more {
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.main_navbar div.collapse div.menu_more i {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: scale(1.1, 1.1);
+}
+
+.menu_collapse_transition {
+    transition: all 0.6s;
+    opacity: 0.5;
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.menu_collapse_transition.menu_collapse_transition_open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+
+/* slides part */
+div.main_slides {
+    width: 100%;
+    height: 670px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main_slides div.box1 {
+    width: auto;
+    height: 68.243px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.main_slides div.box1 p:nth-child(1) {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+div.main_slides div.box1 p:nth-child(2) {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+
+
+/* theband part */
+div.main_theband {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+div.main_theband div.box1 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.main_theband div.box1 h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 11.2px;
+}
+
+div.main_theband div.box1 p:nth-of-type(1) {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -20px;
+}
+
+div.main_theband div.box1 p:nth-of-type(2) {
+    width: 800px;
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_theband div.members {
+    width: 756px;
+    flex-shrink: 0;
+    padding: 25px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.main_member {
+    width: 166px;
+    height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main_member h3 {
+    margin: 0 0 10px 0;
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_member div.img1 {
+    width: 166px;
+    height: 213px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: none;
+}
+
+
+
+/* tour part */
+div.main_tour {
+    width: 100%;
+    padding: 50px 0 75px 0;
+    background: #0B0B0B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+div.main_tour div.box1 {
+    width: 850px;
+    height: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main_tour div.box1 h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_tour div.box1 p {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_tour div.box1 ul {
+    width: 100%;
+    height: 140px;
+    flex-shrink: 0;
+    padding-left: 0;
+}
+
+div.main_tour div.box1 ul li {
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    background: #FFF;
+    position: relative;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_tour div.box1 ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main_tour div.box1 ul li span.soldout {
+    width: 75px;
+    height: 22px;
+    flex-shrink: 0;
+    background: #F04444;
+    margin-left: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_tour div.box1 ul li span.ticket_left {
+    flex-shrink: 0;
+    position: absolute;
+    right: 30px;
+}
+
+div.main_tour div.box1 ul li span.ticket_left p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 2;
+}
+
+div.main_tour div.box1 ul li span.ticket_left svg {
+    position: absolute;
+    z-index: 1;
+}
+
+div.main_tour div.tickets {
+    width: 850px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.main_ticket {
+    width: 250px;
+    height: 370px;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.main_ticket div.ticket_image {
+    width: 100%;
+    height: 170px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: none;
+}
+
+div.main_ticket div.ticket_box {
+    width: 90%;
+    height: 165px;
+    flex-shrink: 0;
+    margin-top: 15px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.main_ticket div.ticket_box p {
+    margin: 0;
+}
+
+div.main_ticket div.ticket_box p:nth-child(1) {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+div.main_ticket div.ticket_box p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main_ticket div.ticket_box p:nth-child(3) {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90% px;
+}
+
+div.main_ticket div.ticket_box button {
+    width: 110px;
+    height: 42px;
+    flex-shrink: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  
+
+
+/* contact part */
+div.main_contact {
+    width: 100%;
+    height: 431px;
+    background: #FFFBF8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.main_contact h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.96px;
+}
+
+div.main_contact p.para1 {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -55px;
+}
+
+div.main_contact div.contact_box {
+    width: 800px;
+    height: 101px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main_contact div.contact_box div.paragraphs {
+    width: 200px;
+    height: 77px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.main_contact div.contact_box div.paragraphs p {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+div.main_contact div.contact_box div.paragraphs span {
+    margin-right: 20px;
+}
+
+div.main_contact div.contact_box div.inputs {
+    width: 400px;
+    height: 101px;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+div.main_contact div.contact_box div.inputs input {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+    width: 190px;
+    height: 43px;
+    flex-shrink: 0;
+    border: 0.3px solid #000;
+    background: #FFF;
+}
+
+div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+    width: 190px;
+    height: 43px;
+    flex-shrink: 0;
+    border: 0.3px solid #000;
+    background: #FFF;
+}
+
+div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+    width: 100%;
+    height: 43px;
+    flex-shrink: 0;
+    border: 0.3px solid #000;
+    background: #FFF;
+}
+
+div.main_contact button {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 75px;
+    height: 37px;
+    flex-shrink: 0;
+    background: #000;
+    position: relative;
+    top: -58px;
+    left: 361px;
+}
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    div.main_contact {
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px 0 30px 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    div.main_contact h3 {
+        margin-bottom: 5px;
+    }
+
+    div.main_contact p.para1 {
+        margin: 0 0 20px 0;
+    }
+
+    div.main_contact div.contact_box {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    div.main_contact div.contact_box div.inputs {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-content: stretch;
+    }
+
+    div.main_contact div.contact_box div.inputs input {
+        margin-bottom: 10px;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+        width: 100%;
+    }
+
+    div.main_contact button {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        align-self: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    div.main_contact {
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px 0 30px 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    div.main_contact h3 {
+        margin-bottom: 5px;
+    }
+
+    div.main_contact p.para1 {
+        margin: 0 0 20px 0;
+    }
+
+    div.main_contact div.contact_box {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    div.main_contact div.contact_box div.inputs {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-content: stretch;
+    }
+
+    div.main_contact div.contact_box div.inputs input {
+        margin-bottom: 10px;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+        width: 100%;
+    }
+
+    div.main_contact button {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        align-self: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    div.main_contact {
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px 0 30px 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    div.main_contact h3 {
+        margin-bottom: 5px;
+    }
+
+    div.main_contact p.para1 {
+        margin: 0 0 20px 0;
+    }
+
+    div.main_contact div.contact_box {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    div.main_contact div.contact_box div.inputs {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-content: stretch;
+    }
+
+    div.main_contact div.contact_box div.inputs input {
+        margin-bottom: 10px;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+        width: 100%;
+    }
+
+    div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+        width: 100%;
+    }
+
+    div.main_contact button {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    div.main_contact {
+        align-items: center;
+    }
+
+    div.main_contact button {
+        align-self: auto;
+    }
+}
+
+
+
+/* map part */
+div.main_map {
+    width: 100%;
+    height: 70vw;
+    background-image: url("./assets/images/map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* footer part */
+div.main_footer {
+    width: 100%;
+    height: 295px;
+    background: #FFFBF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+div.main_footer div.icons {
+    width: 193.875px;
+    height: 24.37px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main_footer div.icons a {
+    text-decoration: none;
+}
+
+div.main_footer div.icons a i {
+    transform: scale(1.2, 1.2);
+    color: rgba(0, 0, 0, 0.6);
+    transition-duration: 0.4s;
+    transition-property: all;
+}
+
+div.main_footer div.icons a i:hover {
+    transform: translateY(-9px) scale(1.6, 1.6);
+    color: rgb(96, 200, 235);
+}
+
+div.main_footer p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    div.main_navbar div.normal {
+        display: none;
+    }
+
+    div.main_navbar div.collapse {
+        display: flex;
+    }
+
+    div.main_slides {
+        height: 60vh;
+    }
+
+    div.main_slides div.box1 p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    div.main_slides div.box1 p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    div.main_theband div.box1 h3 {
+        font-size: 28px;
+        letter-spacing: 9.5px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(1) {
+        font-size: 12px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(2) {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    div.main_theband div.members {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    div.main_tour div.box1 {
+        width: 95vw;
+    }
+
+    div.main_tour div.box1 h3 {
+        margin-bottom: 0;
+    }
+
+    div.main_tour div.tickets {
+        width: 95vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+    }
+
+    div.main_map {
+        display: none;
+    }
+
+    div.main_footer p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    div.main_navbar div.normal {
+        display: none;
+    }
+
+    div.main_navbar div.collapse {
+        display: flex;
+    }
+
+    div.main_slides {
+        height: 60vh;
+    }
+
+    div.main_slides div.box1 p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    div.main_slides div.box1 p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    div.main_theband div.box1 h3 {
+        font-size: 28px;
+        letter-spacing: 9.5px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(1) {
+        font-size: 12px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(2) {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    div.main_theband div.members {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    div.main_tour div.box1 {
+        width: 95vw;
+    }
+
+    div.main_tour div.box1 h3 {
+        margin-bottom: 0;
+    }
+
+    div.main_tour div.tickets {
+        width: 95vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+    }
+
+    div.main_map {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    div.main_navbar div.normal {
+        display: none;
+    }
+
+    div.main_navbar div.collapse {
+        display: flex;
+    }
+
+    div.main_slides {
+        height: 60vh;
+    }
+
+    div.main_slides div.box1 p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    div.main_slides div.box1 p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    div.main_theband div.box1 h3 {
+        font-size: 28px;
+        letter-spacing: 9.5px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(1) {
+        font-size: 12px;
+    }
+
+    div.main_theband div.box1 p:nth-of-type(2) {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    div.main_theband div.members {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    div.main_tour div.box1 {
+        width: 95vw;
+    }
+
+    div.main_tour div.box1 h3 {
+        margin-bottom: 0;
+    }
+
+    div.main_tour div.tickets {
+        width: 95vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+    }
+
+    div.main_map {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    div.main_slides {
+        height: 60vh;
+    }
+
+    div.main_slides div.box1 p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    div.main_slides div.box1 p:nth-child(2) {
+        font-size: 14px;
+    }
+}

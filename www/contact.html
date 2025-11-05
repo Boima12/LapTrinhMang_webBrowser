@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Local Test Site</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2em; background: #fafafa; }
+nav a { margin: 0 10px; color: #007bff; text-decoration: none; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 300px; margin-top: 1em; }
+input, textarea, button { padding: 8px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #007bff; color: white; cursor: pointer; border: none; }
+button:hover { background: #0056b3; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/contact.html">Contact</a>
+</nav>
+<h1>Contact Us</h1>
+<p>Submit a POST request to test your client’s POST handling:</p>
+<form method="POST" action="/contact.html">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <textarea name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+</body>
+</html>
